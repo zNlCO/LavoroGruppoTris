@@ -1,0 +1,31 @@
+#tfGioc1 {
+    float: left;
+    margin-left: 25%;
+}
+
+#tfGioc2 {
+    float: right;
+    margin-right: 25%;
+}
+
+h3
+{
+    text-align: center;
+    font-size: 55px;
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', 'sans-serif';
+}
+    
+
+input{
+    background-color: rgb(255, 183, 38);
+    border-color: rgb(255, 170, 0);
+    color: white;
+    text-align: center;
+    font-size:150%;
+}
+
+::placeholder{
+    color: white;
+    text-align: center;
+}
