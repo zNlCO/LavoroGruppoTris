@@ -1,18 +1,15 @@
-#tot{
-    text-align: center;
-    margin-left: 25%;
-    margin-right: 25%;
-    border: solid orangered 5px;
-    background-color: white;
-  }
-  #titolo{
-      color: red;
-      font-size: 50px;
-      
-      font-family: Impact, 'Haettenschweiler', 'Arial Narrow Bold', sans-serif;
+#tot
+{
+  text-align: center;
+  margin-left: 25%;
+  margin-right: 25%;
+  border: solid orangered 5px;
+  background-color: white;
+}
+#titolo
+{
+    color: red;
+    font-size: 50px;
+    font-family: Impact, 'Haettenschweiler', 'Arial Narrow Bold', sans-serif;
+}
   
-      
-  }
-  body{
-    background-color: rgb(24, 135, 214);
-  }

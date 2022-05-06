@@ -6,16 +6,24 @@ body
 
 }
 
+h3
+{
+    text-align: center;
+    font-size: 55px;
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', 'sans-serif';
+}
 
+/* css bottone*/
 button{
     display: inline-block;
+    text-align: center;
     text-decoration: none;
     font-size: 30px;
     background-color: rgb(255, 183, 38);
     color: white;
     padding: 20px 50px;
     border: 3px solid rgb(255, 170, 0);
-    position: relative;
     position: absolute;
     top: 50%;
     left: 50%;
