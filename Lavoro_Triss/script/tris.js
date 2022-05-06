@@ -44,10 +44,11 @@
 
 */
 
-function mostraimmagine(){
+/*function mostraimmagine()
+{
     document.getElementById('ImmagineTris')
     .style.display = "block";
 
     document.getElementById('btnImg')
     .style.display = "none";
-}
+}*/

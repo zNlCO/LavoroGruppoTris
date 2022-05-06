@@ -28,12 +28,27 @@
     Label per... tocca a (nome giocatore) 
     <label for=""></label>
     -->
-    <img id="ImmagineTris" src="https://www.google.com/url?sa=i&url=https%3A%2F%2Filchaos.com%2Findios-a-rischio-estinzione-con-la-foresta-amazzonica-in-fiamme%2F&psig=AOvVaw0oQ3bwZ0jn2sC4lH8kuD8I&ust=1651922278269000&source=images&cd=vfe&ved=0CAwQjRxqFwoTCNDFm5_gyvcCFQAAAAAdAAAAABAJ" alt="1">
+    <img id="ImmagineTris" src="../immagini/prova1.jpg" />
+    <br>
+    <br>
+    <!--Pulsante per startare la partita-->
+    <button type="button" onclick="mostraImmagine()" id="btnImg">Gioca</button>
+    <script>
+        //primo metodo
+        /*function mostraImmagine(){
+        let image = document.getElementById("ImmagineTris");
+ 
+        image.src = "../immagini/prova1.jpg"
+        document.getElementById("btnImg").style.display = "none";
+        }*/
+        //secondo metodo
+        function mostraImmagine()
+        {
+            document.getElementById('ImmagineTris').style.display = "block";
 
-    <br>
-    <br>
-    <!--Pulsante per resettare la partita-->
-    <button id="btnImg" onclick="mostraImmagine()"><b>Gioca!</b></button>
+            document.getElementById('btnImg').style.display = "none";
+        }
+    </script>
 </body>
 
 </html>
