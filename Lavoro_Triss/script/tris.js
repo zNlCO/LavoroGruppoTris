@@ -8,7 +8,8 @@
 //secondo metodo
 function mostraImmagine()
 {
-	document.getElementById('ImmagineTris').style.display = "block";
+	document.getElementById('tabella_gioco').style.display = "block";
+	document.getElementById('gioca_ancora').style.display = "block";
 
 	document.getElementById('btnImg').style.display = "none";
 }
