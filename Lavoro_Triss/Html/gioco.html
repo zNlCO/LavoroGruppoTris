@@ -16,10 +16,12 @@
         <h3><b>Inserisci i nomi dei dei 2 giocatori</b></h3>
         <br>
         <br>
+        <!--flex box-->
         <form>
             <input id="tfGioc1" type="text" placeholder="Giocatore 1">
             <input id="tfGioc2" type="text" placeholder="Giocatore 2">
         </form>
+
 
         <!--label per punteggio giocatore 1
         <label for="" ></label>
@@ -30,25 +32,19 @@
         -->
         <br>
         <br>
-        <div id="tabella_gioco">
-            <table>
-                <tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-            </table>
+
+        <div class= "tabellaDiGioco" id="tabella_gioco">
+            <div class="cell" data-cell></div>
+            <div class="cell" data-cell></div>
+            <div class="cell" data-cell></div>
+            <div class="cell" data-cell ></div>
+            <div class="cell" data-cell></div>
+            <div class="cell" data-cell></div>
+            <div class="cell" data-cell></div>
+            <div class="cell" data-cell></div>
+            <div class="cell" data-cell></div>
         </div>
+
         <br>
         <br>
         <button type="button" id="gioca_ancora">gioca ancora</button>
