@@ -8,9 +8,6 @@ box-sizing: border-box;
 --mark-size: calc(var(--cell-size) * .9);
 }
 
-body {
-margin: 0;
-}
 
 .board {
 display: none;
