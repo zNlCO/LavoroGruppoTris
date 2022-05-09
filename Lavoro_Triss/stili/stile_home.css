@@ -1,16 +1,20 @@
-#tot
-{
+#tot{
   text-align: center;
   margin-left: 25%;
   margin-right: 25%;
   border: solid orangered 5px;
   background-color: white;
 }
-#titolo
-{
+#titolo{
+    text-align: center;
     color: red;
-    font-size: 50px;
+    font-size: 300%;
+    margin-left: 25%;
+    margin-right: 25%;
     font-family: Impact, 'Haettenschweiler', 'Arial Narrow Bold', sans-serif;
+}
+body{
+  background-color: rgb(24, 135, 214);
 }
 .btn5{
   display:inline-block;
@@ -39,3 +43,52 @@
   color:#D9D9D9;
   box-shadow:none;
 }
+#btn1 {
+  float: left;
+  margin-left: 15px;
+  margin-top: 7px;
+  width: 50px;
+  height: 50px;
+  display: inline;
+  white-space: nowrap;
+  color: #FFFFFF;
+  background-image: url("volume.png");
+  background-size: cover; /*Per farli prendere la grandezza del pulsante*/
+  background-repeat: no-repeat;
+  background-position: center center;
+  text-decoration: none;
+  line-height: 1.2;
+  background-color: #007BFF;
+  border-radius: 11px;
+  padding: 9px 17px;
+  border: 3px solid #006FE6;
+  cursor: pointer;
+ }
+ .btn1:hover {
+  background-color: #0063CC;
+  border-color: #0056B3;
+ }/*
+ #btn2 {
+  float: right;
+  margin-right: 15px;
+  width: 50px;
+  height:50px;
+  display: inline;
+  white-space: nowrap;
+  color: #FFFFFF;
+ margin-bottom: 90%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  text-decoration: none;
+  line-height: 1.2;
+  background-color: #007BFF;
+  border-radius: 11px;
+  padding: 9px 17px;
+  border: 3px solid #006FE6;
+  cursor: pointer;
+ }
+ #btn2:hover {
+  background-color: #0063CC;
+  border-color: #0056B3;
+ } */

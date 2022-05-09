@@ -13,3 +13,18 @@ function mostraImmagine()
 
 	document.getElementById('btnImg').style.display = "none";
 }
+/*
+turno=0;
+function assegna(riga,colonna)
+{
+	n=riga*3+ colonna
+	if(turno%2==0)
+	{
+		document.images[n].src="x.png";
+	}
+	else
+	{
+		document.images[n].src="o.png";	
+	}
+	turno=turno+1;
+}*/
