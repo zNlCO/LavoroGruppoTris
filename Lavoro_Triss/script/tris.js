@@ -8,7 +8,7 @@
 //secondo metodo
 function mostraImmagine()
 {
-	document.getElementById('tabella_gioco').style.display = "block";
+	document.getElementById('tabellaDiGioco').style.display = "block";
 	document.getElementById('gioca_ancora').style.display = "block";
 
 	document.getElementById('btnImg').style.display = "none";
