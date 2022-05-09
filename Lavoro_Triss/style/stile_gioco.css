@@ -26,15 +26,6 @@ input
     font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', 'sans-serif';
 }
 
-div
-{
-    display: none;
-    margin-top: 8%;
-    margin-left: 42%;
-    margin-right: 42%;
-    background-color: aliceblue;
-}
-
 #gioca_ancora
 {
     display: none;
