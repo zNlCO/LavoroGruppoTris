@@ -1,49 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
 
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>TRIS</title>
-        <link rel="stylesheet" href="../style/stile_gioco.css">
-        <link rel="stylesheet" href="../style/stile_home.css">
-        <link rel="stylesheet" href="../style/stile_unico.css">
-        <script type="text/javascript" src="../script/tris.js"></script>
-        <link rel="stylesheet" href="../style/stile_tris.css">
-        <script type="text/javascript" src="../script/mostra.js"></script>
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TRIS</title>
+    <link rel="stylesheet" href="../style/stile_gioco.css">
+    <link rel="stylesheet" href="../style/stile_home.css">
+    <link rel="stylesheet" href="../style/stile_unico.css">
+    <script type="text/javascript" src="../script/tris.js"></script>
+    <link rel="stylesheet" href="../style/stile_tris.css">
+    <script type="text/javascript" src="../script/mostra.js"></script>
+</head>
 
-    <body>
+<body>
 
-        <h3><b>Inserisci i nomi dei dei 2 giocatori</b></h3>
-        <br>
-        <br>
-        <!--flex box-->
-        <form>
-            <input id="tfGioc1" type="text" placeholder="Giocatore 1">
-            <input id="tfGioc2" type="text" placeholder="Giocatore 2">
-        </form>
-        <br>
-        <br> 
-        
-        <div class= "board" id="board">
-            <div class="cell" data-cell></div>
-            <div class="cell" data-cell></div>
-            <div class="cell" data-cell></div>
-            <div class="cell" data-cell ></div>
-            <div class="cell" data-cell></div>
-            <div class="cell" data-cell></div>
-            <div class="cell" data-cell></div>
-            <div class="cell" data-cell></div>
-            <div class="cell" data-cell></div>
-        </div>
+    <h3><b>Inserisci i nomi dei dei 2 giocatori</b></h3>
+    <br>
+    <br>
+    <!--flex box-->
+    <form>
+        <input id="tfGioc1" type="text" placeholder="Giocatore 1">
+        <input id="tfGioc2" type="text" placeholder="Giocatore 2">
+    </form>
+    <br>
+    <br>
 
-        <br>  
-        <br>
-        <button type="button" id="gioca_ancora">gioca ancora</button>
+    <div class="board" id="board">
+        <div class="cell" data-cell></div>
+        <div class="cell" data-cell></div>
+        <div class="cell" data-cell></div>
+        <div class="cell" data-cell></div>
+        <div class="cell" data-cell></div>
+        <div class="cell" data-cell></div>
+        <div class="cell" data-cell></div>
+        <div class="cell" data-cell></div>
+        <div class="cell" data-cell></div>
+    </div>
+
+    <br>
+    <br>
+    <div>
+        <button type="button" id="restartButton">gioca ancora</button>
         <!--Pulsante per startare la partita-->
         <button type="button" onclick="mostraImmagine()" id="btnImg">Gioca</button>
-    </body>
+    </div>
+
+    <!--
+        <div class="winning-message" id="winningMessage">
+        <div data-winning-message-text></div>
+        <button id="restartButton">Restart</button>
+        </div>
+    -->
+
+</body>
 
 </html>

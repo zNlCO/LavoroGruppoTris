@@ -26,7 +26,7 @@ input
     font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', 'sans-serif';
 }
 
-#gioca_ancora
+#restartButton
 {
     display: none;
     margin-top: 17%;
