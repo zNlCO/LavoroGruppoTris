@@ -1,14 +1,17 @@
-#tfGioc1 {
+#tfGioc1 
+{
     float: left;
     margin-left: 25%;
 }
 
-#tfGioc2 {
+#tfGioc2 
+{
     float: right;
     margin-right: 25%;
 }
     
-input{
+input
+{
     background-color: rgb(255, 183, 38);
     border-color: rgb(255, 170, 0);
     color: white;
@@ -16,7 +19,8 @@ input{
     font-size:150%;
 }
 
-::placeholder{
+::placeholder
+{
     color: white;
     text-align: center;
     font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', 'sans-serif';
@@ -45,7 +49,8 @@ div
     --mark-size: cal(var(var(--cell-size))*.9)
 }
 
-.tabellaDiGioco{
+.tabellaDiGioco
+{
     width:100vw;
     height: 100vh;
     display:grid;
@@ -54,7 +59,8 @@ div
     align-items: center;
     grid-template-columns: repeat(3, auto);
 }
-.cell{
+.cell
+{
     width: var(--cell-size);
     height: var(--cell-size);
     border: 1px solid black;
@@ -65,34 +71,41 @@ div
 
 .cell:first-child,
 .cell:nth-child(2),
-.cell:nth-child(3) {
+.cell:nth-child(3) 
+{
     border-top: none;
 }
 
-.cell:nth-child(3n+1){
+.cell:nth-child(3n+1)
+{
     border-left: none;
 }
 
-.cell:nth-child(3n+3){
+.cell:nth-child(3n+3)
+{
     border-right: none;
 }
 .cell:first-child,
 .cell:nth-child(8),
-.cell:nth-child(7) {
+.cell:nth-child(7) 
+{
     border-bottom: none;
 }
 
 .cell.x::before,
-.cell.x::after{
+.cell.x::after
+{
     content: '';
     width: calc(var(--mark-size)* .15);
     height: calc(var(--mark-size));
     background-color: black;
 }
 
-.cell.x::before{
+.cell.x::before
+{
     transform: rotate(45deg);
 }
-.cell.x::after{
+.cell.x::after
+{
     transform: rotate(-45deg);
 }
