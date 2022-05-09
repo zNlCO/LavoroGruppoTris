@@ -41,11 +41,13 @@ div
     margin-top: 17%;
 }
 
+/*
+
+PARTE VECCHIA SCRITTA A MANO
+
 :root
 {
-    /*dimensione celle*/
     --cell-size: 100px;
-    /*dimensione cerchio o ikseh*/
     --mark-size: cal(var(var(--cell-size))*.9)
 }
 
@@ -109,3 +111,4 @@ div
 {
     transform: rotate(-45deg);
 }
+*/
