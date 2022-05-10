@@ -30,7 +30,7 @@ button{
     padding: 20px 50px;
     border: 3px solid rgb(255, 170, 0);
     position: absolute;
-    top: 50%;
+    top: 55%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
@@ -47,6 +47,7 @@ button{
     display: none;
     margin-top: 17%;
 }
+
 
 /*
 
