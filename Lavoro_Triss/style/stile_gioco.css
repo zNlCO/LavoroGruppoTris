@@ -19,6 +19,22 @@ input
     font-size:150%;
 }
 
+/* css bottone*/
+button{
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+    font-size: 30px;
+    background-color: rgb(255, 183, 38);
+    color: white;
+    padding: 20px 50px;
+    border: 3px solid rgb(255, 170, 0);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
 ::placeholder
 {
     color: white;
