@@ -67,7 +67,28 @@ body{
  .btn1:hover {
   background-color: #0063CC;
   border-color: #0056B3;
- }/*
+ }
+ 
+ .container {
+  width: 60%;
+  margin-left: 15%;
+  margin-top: 70px;
+  margin-bottom: 70px;
+  padding: 50px;
+  border-radius: 50px;
+  box-shadow: -15px 16px 15px 0px rgb(47, 44, 44);
+}
+
+.container-img 
+{
+  width: 30%;
+  margin-left: 25%;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  border-radius: 30px;
+}
+ 
+ /*
  #btn2 {
   float: right;
   margin-right: 15px;
