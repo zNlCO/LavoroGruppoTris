@@ -27,7 +27,7 @@ button{
     font-size: 30px;
     background-color: rgb(255, 183, 38);
     color: white;
-    /*padding: 20px 50px;*/
+    padding: 20px 50px;
     border: 3px solid rgb(255, 170, 0);
     position: absolute;
     /*top: 55%;*/
@@ -42,18 +42,21 @@ button{
     font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', 'sans-serif';
 }
 
+
 #restartButton
 {
     display: none;
     /*margin-top: 17%;*/
 }
 
+/*dato grandezza al div per spaziarlo dagli altri div*/
 #restartButtonDiv
 {
     width: 100vw;
     height: 20vh;
 }
 
+/*dato grandezza al div per spaziarlo dagli altri div*/
 #inputDiv
 {
     width: 100vw;
