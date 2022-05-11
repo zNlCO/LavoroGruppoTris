@@ -72,6 +72,7 @@ function swapTurns() {
 }
 
 function setBoardHoverClass() {
+	//errore in questa funzione
 	board.classList.remove(X_CLASS)
 	board.classList.remove(CIRCLE_CLASS)
 	if (circleTurn) {
@@ -80,6 +81,7 @@ function setBoardHoverClass() {
 	board.classList.add(X_CLASS)
 	}
 }
+
 
 function checkWin(currentClass) {
 	return WINNING_COMBINATIONS.some(combination => {
