@@ -12,6 +12,7 @@ box-sizing: border-box;
 .board 
 {
 display: none;
+/*background-color: aliceblue;*/
 /*margin-top: -25%;*/
 /*vw e vh è la percentuale rispettivamente di larghezza e altezza a cui verranno attribuiti in base al viewpoint(l'area che vede l'utente nella pagina)*/
 width: 100vw;
