@@ -32,6 +32,7 @@ button{
     position: absolute;
     /*top: 55%;*/
     left: 50%;
+    /*serve a spostare l'elemento nelle assi x e y*/
     transform: translate(-50%, -50%);
 }
 
