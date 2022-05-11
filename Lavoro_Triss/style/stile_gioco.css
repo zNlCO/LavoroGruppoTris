@@ -45,7 +45,13 @@ button{
 #restartButton
 {
     display: none;
-    margin-top: 17%;
+    /*margin-top: 17%;*/
+}
+
+#restartButtonDiv
+{
+    width: 100vw;
+    height: 20vh;
 }
 
 

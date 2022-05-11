@@ -1,5 +1,5 @@
-
 *, *::after, *::before {
+/* in questo modo la larghezza e l'altezza specificate di un elemento non sono influenzate dal riempimento o dai bordi (serve per un miglioramento e facilitamento del responsive)*/
 box-sizing: border-box;
 }
 
@@ -13,8 +13,9 @@ box-sizing: border-box;
 {
 display: none;
 /*margin-top: -25%;*/
+/*vw e vh è la percentuale rispettivamente di larghezza e altezza a cui verranno attribuiti in base al viewpoint(l'area che vede l'utente nella pagina)*/
 width: 100vw;
-height: 47vh;
+height: 70vh;
 /*display: grid;*/
 justify-content: center;
 align-content: center;
