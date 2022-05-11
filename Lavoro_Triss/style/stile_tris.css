@@ -15,7 +15,7 @@ display: none;
 /*margin-top: -25%;*/
 /*vw e vh è la percentuale rispettivamente di larghezza e altezza a cui verranno attribuiti in base al viewpoint(l'area che vede l'utente nella pagina)*/
 width: 100vw;
-height: 70vh;
+height: 60vh;
 /*display: grid;*/
 justify-content: center;
 align-content: center;
