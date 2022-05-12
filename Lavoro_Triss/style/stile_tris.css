@@ -17,15 +17,17 @@ margin-top: -25%;
 /*vw e vh è la percentuale rispettivamente di larghezza e altezza a cui verranno attribuiti in base al viewpoint(l'area che vede l'utente nella pagina)*/
 width: 100vw;
 height: 60vh;
-/*display: grid;*/
+/*Per mettere tutto centrale*/
 justify-content: center;
 align-content: center;
 justify-items: center;
 align-items: center;
+/*in questo modo creiamo una griglia 3*3 in automatico*/
 grid-template-columns: repeat(3, auto)
 }
 
 .cell {
+/*larghezza e  altezza richiamano la variabile cell size dichiarata sopra*/
 width: var(--cell-size);
 height: var(--cell-size);
 border: 1px solid black;
