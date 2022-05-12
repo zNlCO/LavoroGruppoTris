@@ -71,9 +71,10 @@ body{
  
  .container {
   width: 60%;
-  margin-left: 15%;
-  margin-top: 70px;
-  margin-bottom: 70px;
+  margin-left: 13%;
+  margin-right: 15%;
+  margin-top: 10%;
+  margin-bottom: 10%;
   padding: 50px;
   border-radius: 50px;
   box-shadow: -15px 16px 15px 0px rgb(47, 44, 44);
@@ -113,3 +114,34 @@ body{
   background-color: #0063CC;
   border-color: #0056B3;
  } */
+
+ 
+ #btn1{
+    display: inline-block;
+    width: 80px;
+    height: 50px;
+    background-color: #007BFF;
+    background-image: url(../imm/volume.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border: 3px solid #006FE6;
+    border-radius: 14px;
+    cursor: pointer;
+    box-shadow: 0 5px #999;
+}
+   #btn1:hover {
+    background-color: #0063CC;
+    border-color: #0056B3;
+   }
+   #btn1:active {
+    background-color: #0063CC;
+    box-shadow: 0 2px #666;
+    transform: translateY(4px);
+  }
+img
+{
+  width: 10%;
+  margin-left: 25%;
+  margin-right: 25%;
+}
