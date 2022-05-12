@@ -30,7 +30,7 @@ function startGame() {
 		cell.removeEventListener('click', handleClick)
 		cell.addEventListener('click', handleClick, { once: true })
 	})
-	setBoardHoverClass()
+	setBoardHoverClass(classList)
 	winningMessageElement.classList.remove('show')
 }
 
@@ -44,7 +44,7 @@ function handleClick(e) {
 		endGame(true)
 	} else {
 		swapTurns()
-		setBoardHoverClass()
+		setBoardHoverClass(classList)
 	}
 }
 
