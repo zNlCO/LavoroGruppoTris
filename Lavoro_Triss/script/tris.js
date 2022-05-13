@@ -59,7 +59,7 @@ function checkWin()
 		if(caselleEsatte == 3){
 			/*VITTORIA PER LE X*/
 			//getElementById("setText").innerText = "ciao";
-			
+			document.getElementById("setText").innerHTML = "Il *giocatore 1*";
 		}
 		caselleEsatte = 0
 	}
@@ -89,8 +89,6 @@ function checkWin()
 		if(caselleEsatte == 3){
 			/*VITTORIA PER LE X*/
 			//getElementById("setText").innerText = "ciao";
-
-			
 			document.getElementById("setText").innerHTML = "Il *giocatore 2*";
 		}
 		caselleEsatte = 0
