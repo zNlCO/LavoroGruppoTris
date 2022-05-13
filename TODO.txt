@@ -1,0 +1,7 @@
++conteggi punti 
+
++grafico
+
++bloccare le caselle quando vengoono premute una volta
+
++prevelare i nomi dei giocatori e metterli nei conteggi punti e nella scritta di vincita

@@ -90,7 +90,7 @@ function checkWin()
 			/*VITTORIA PER LE X*/
 			//getElementById("setText").innerText = "ciao";
 
-			//
+			
 			document.getElementById("setText").innerHTML = "Il *giocatore 2*";
 		}
 		caselleEsatte = 0
