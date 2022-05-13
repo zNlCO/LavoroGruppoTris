@@ -1,12 +1,10 @@
 .board 
 {
-    display: none;
-    /*vw e vh è la percentuale rispettivamente di larghezza e altezza a cui verranno attribuiti in base al viewpoint(l'area che vede l'utente nella pagina)*/
-    
+    display: none; 
 }
 
-/*img
+img
 {
-    width: 10vw;
+    margin-left: 50%;
     height: 10vh;
-}*/
+}
