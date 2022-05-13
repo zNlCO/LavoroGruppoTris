@@ -55,7 +55,8 @@ function checkWin(){
 		}
 		if(caselleEsatte == 3){
 			/*VITTORIA PER LE X*/
-			getElementById("setText").innerText = "ciao";
+			//getElementById("setText").innerText = "ciao";
+			document.write("ciao")
 		}
 		caselleEsatte = 0
 	}
