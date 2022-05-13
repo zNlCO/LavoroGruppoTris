@@ -23,15 +23,17 @@ function assegna(posizione)
 	{
 		document.images[posizione].src="../imm/o.png"
 		arrayy.push(posizione)
+		
 	}
 	turno+=1
-
-	if(turno>4){
+	document.images[posizione].disabled= true;
+	if(turno>5){
 		checkWin();
 	}
 }
 
 function checkWin(){
+	alert("ciao");
 	/*variabile per capire se c'è la casella esatta nella combinazione di vittoria*/
 	var casellaEsatta = false
 	//varibile per capire se raggiunge 3 caselle per "formare" la vittoria
@@ -56,7 +58,7 @@ function checkWin(){
 		if(caselleEsatte == 3){
 			/*VITTORIA PER LE X*/
 			//getElementById("setText").innerText = "ciao";
-			document.write("ciao")
+			alert("ciao");
 		}
 		caselleEsatte = 0
 	}
