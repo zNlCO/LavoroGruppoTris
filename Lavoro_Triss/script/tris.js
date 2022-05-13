@@ -110,12 +110,12 @@ function assegna(posizione)
 {
 	if(turno%2==0)
 	{
-		document.images[posizione].src= "x.png"
+		document.images[posizione].src= "../imm/x.png"
 		arrayx.push(posizione)
 	}
 	else
 	{
-		document.images[posizione].src="o.png"
+		document.images[posizione].src="../imm/o.png"
 		arrayy.push(posizione)
 	}
 	turno+=1
