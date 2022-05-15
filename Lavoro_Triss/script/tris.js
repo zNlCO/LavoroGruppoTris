@@ -15,14 +15,16 @@ function assegna(posizione) {
 
 	//NON TOCCARE MANCA PARTE (serve a bloccare le caselle già premute)
 
-	let casellaMaiUsata = false
+	let casellaMaiUsata = true
 	for (let b = 0; b < (arrayo.length + arrayx.length); b++) {
 		let arrayxo = arrayo.concat(arrayx)
+		console.log(posizione + " = "+ arrayxo[b])
 		if (posizione == arrayxo[b]) {
-			let casellaMaiUsata = true
+			casellaMaiUsata = false
 		}
 	}
 
+	console.log(casellaMaiUsata)
 	if (casellaMaiUsata) {
 		if (turno % 2 == 0) {
 			var img = document.images[posizione].src = "../imm/x.png"
@@ -95,7 +97,13 @@ function checkWin() {
 		if (caselleEsatte == 3) {
 			/*VITTORIA PER LE X*/
 			//getElementById("setText").innerText = "ciao";
-			document.getElementById("setText").innerHTML = "Il *giocatore 2*";
+			if(document.getElementById(tfGioc1) = null){
+				document.getElementById("setText").innerHTML = "Il giocatore 1"
+			}
+			else{
+				document.getElementById("setText").innerHTML = "Il "+ document.getElementById(tfGioc1)
+			}
+
 		}
 		caselleEsatte = 0
 	}
