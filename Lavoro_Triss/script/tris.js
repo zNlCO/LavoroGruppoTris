@@ -11,6 +11,8 @@ const comGiuste = [
 ]
 var arrayx = []
 var arrayo = []
+
+var finePartita = true;
 function assegna(posizione) {
 
 	//NON TOCCARE MANCA PARTE (serve a bloccare le caselle già premute)
@@ -24,7 +26,7 @@ function assegna(posizione) {
 		}
 	}
 
-	console.log(casellaMaiUsata)
+	console.log(casellaMaiUsata && finePartita)
 	if (casellaMaiUsata) {
 		if (turno % 2 == 0) {
 			var img = document.images[posizione].src = "../imm/x.png"
@@ -65,9 +67,16 @@ function checkWin() {
 			}
 		}
 		if (caselleEsatte == 3) {
+			finePartita = false
 			/*VITTORIA PER LE X*/
 			//getElementById("setText").innerText = "ciao";
-			document.getElementById("setText").innerHTML = "Il *giocatore 1*";
+			console.log(document.getElementById(tfGioc1));
+			if(document.getElementById(tfGioc1) == null){
+				document.getElementById("setText").innerHTML = "giocatore 1 ha vinto"
+			}
+			else{
+				document.getElementById("setText").innerHTML = document.getElementById(tfGioc1) + " ha vinto"
+			}
 		}
 		caselleEsatte = 0
 	}
@@ -95,13 +104,14 @@ function checkWin() {
 			}
 		}
 		if (caselleEsatte == 3) {
+			finePartita = false
 			/*VITTORIA PER LE X*/
 			//getElementById("setText").innerText = "ciao";
-			if(document.getElementById(tfGioc1) = null){
-				document.getElementById("setText").innerHTML = "Il giocatore 1"
+			if(document.getElementById(tfGioc2) == null){
+				document.getElementById("setText").innerHTML = "giocatore 2 ha vinto"
 			}
 			else{
-				document.getElementById("setText").innerHTML = "Il "+ document.getElementById(tfGioc1)
+				document.getElementById("setText").innerHTML = document.getElementById(tfGioc2) + " ha vinto"
 			}
 
 		}
