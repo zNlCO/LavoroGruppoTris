@@ -29,13 +29,12 @@ function assegna(posizione) {
 	console.log(casellaMaiUsata && finePartita)
 	if (casellaMaiUsata) {
 		if (turno % 2 == 0) {
-			var img = document.images[posizione].src = "../imm/x.png"
+			document.images[posizione].src = "../imm/x.png"
 			arrayx.push(posizione)
 		}
 		else {
-			var img = document.images[posizione].src = "../imm/o.png"
+			document.images[posizione].src = "../imm/o.png"
 			arrayo.push(posizione)
-
 		}
 		turno += 1 /* incremento del turno */
 		if (turno > 4) {
@@ -71,10 +70,13 @@ function checkWin() {
 			/*VITTORIA PER LE X*/
 			//getElementById("setText").innerText = "ciao";
 			console.log(document.getElementById(tfGioc1));
-			if(document.getElementById(tfGioc1) == null){
-				document.getElementById("setText").innerHTML = "giocatore 1 ha vinto"
+			if(document.getElementById(tfGioc1) == null)
+			{
+				var vincitore = document.getElementById("tfGioc1").value
+				document.getElementById("setText").innerHTML = vincitore +=" ha vinto"
 			}
-			else{
+			else
+			{
 				document.getElementById("setText").innerHTML = document.getElementById(tfGioc1) + " ha vinto"
 			}
 		}
@@ -107,8 +109,10 @@ function checkWin() {
 			finePartita = false
 			/*VITTORIA PER LE X*/
 			//getElementById("setText").innerText = "ciao";
-			if(document.getElementById(tfGioc2) == null){
-				document.getElementById("setText").innerHTML = "giocatore 2 ha vinto"
+			if(document.getElementById(tfGioc2) == null)
+			{
+				var vincitore = document.getElementById("tfGioc2").value
+				document.getElementById("setText").innerHTML = vincitore + " ha vinto"
 			}
 			else{
 				document.getElementById("setText").innerHTML = document.getElementById(tfGioc2) + " ha vinto"
