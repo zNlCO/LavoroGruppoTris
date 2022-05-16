@@ -15,8 +15,6 @@ var arrayo = []
 var finePartita = true;
 function assegna(posizione) {
 
-	//NON TOCCARE MANCA PARTE (serve a bloccare le caselle già premute)
-
 	let casellaMaiUsata = true
 	for (let b = 0; b < (arrayo.length + arrayx.length); b++) {
 		let arrayxo = arrayo.concat(arrayx)
