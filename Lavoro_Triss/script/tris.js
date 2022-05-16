@@ -68,8 +68,9 @@ function checkWin() {
 			/*VITTORIA PER LE X*/
 			//getElementById("setText").innerText = "ciao";
 			console.log(document.getElementById(tfGioc1));
-			if (document.getElementById(tfGioc1) == null) {
-				document.getElementById("setText").innerHTML = "giocatore 2 ha vinto"
+			if (document.getElementById(tfGioc1) == null) 
+			{
+				document.getElementById("setText").innerHTML =  "Giocatore 1 ha vinto"
 			}
 			else {
 				document.getElementById("setText").innerHTML = document.getElementById(tfGioc1) + " ha vinto"
@@ -104,8 +105,9 @@ function checkWin() {
 			finePartita = false
 			/*VITTORIA PER LE X*/
 			//getElementById("setText").innerText = "ciao";
-			if (document.getElementById(tfGioc2) == null) {
-				document.getElementById("setText").innerHTML = "giocatore 2 ha vinto"
+			if (document.getElementById(tfGioc2) == null) 
+			{
+				document.getElementById("setText").innerHTML = "Giocatore 1 ha vinto"
 			}
 			else {
 				document.getElementById("setText").innerHTML = document.getElementById(tfGioc2) + " ha vinto"

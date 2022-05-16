@@ -1,0 +1,1 @@
+var vincitore = document.getElementById(tfGioc2);
