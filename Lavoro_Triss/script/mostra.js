@@ -18,7 +18,7 @@ function mostra2()
 	arrayx = []
 	finePartita = 0
 
-	//resetto il tris data (16/05/2022 ora 18:55)
+	//resetto il tris 
 	cleanTris()
 
 	//fa scomparire il bottone gioca e il triss
