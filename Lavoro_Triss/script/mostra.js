@@ -15,7 +15,6 @@ function mostra2()
 	//fa scomparire il bottone gioca e il triss
 	document.getElementById('board').style.display = "none";
 	document.getElementById('restartButton').style.display = "none";
-	
 	//riabilita gli input
 	document.getElementById('tfGioc1').disabled = false;
 	document.getElementById('tfGioc2').disabled = false;
