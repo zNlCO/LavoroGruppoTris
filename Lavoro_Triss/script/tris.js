@@ -12,8 +12,7 @@ const comGiuste = [
 var arrayx = []
 var arrayo = []
 
-var finePartita = true;
-
+var finePartita = 0;
 function assegna(posizione) {
 
 	let casellaMaiUsata = true
@@ -24,16 +23,15 @@ function assegna(posizione) {
 		}
 	}
 
-	if (casellaMaiUsata) {
+	
+	if (casellaMaiUsata && finePartita<1) {
 		if (turno % 2 == 0) {
 			document.images[posizione].src = "../imm/x.png"
 			arrayx.push(posizione)
-			console.log(posizione+ "x")
 		}
 		else {
 			document.images[posizione].src = "../imm/o.png"
 			arrayo.push(posizione)
-			console.log(posizione+ "o")
 		}
 		}
 	turno += 1 /* incremento del turno */
@@ -44,7 +42,6 @@ function assegna(posizione) {
 
 
 function checkWin() {
-
 	//varibile per capire se raggiunge 3 caselle per "formare" la vittoria
 	var caselleEsatte = 0
 	//cicla le 8 combinazioni di vittoria del tris
@@ -64,7 +61,7 @@ function checkWin() {
 
 		
 		if (caselleEsatte == 3) {
-			finePartita = false
+			finePartita++
 			/*VITTORIA PER LE X*/
 			if (document.getElementById(tfGioc1) == null) {
 				document.getElementById("setText").innerHTML = "Giocatore 1 ha vinto"
@@ -97,7 +94,8 @@ function checkWin() {
 
 		
 		if (caselleEsatte == 3) {
-			finePartita = false
+			finePartita++
+			console.log(finePartita)
 			/*VITTORIA PER LE O*/
 			if (document.getElementById(tfGioc2) == null) {
 				document.getElementById("setText").innerHTML = "Giocatore 2 ha vinto"
