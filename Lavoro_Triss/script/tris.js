@@ -64,11 +64,14 @@ function checkWin() {
 		if (caselleEsatte == 3) {
 			finePartita++
 			/*VITTORIA PER LE X*/
-			if (document.getElementById(tfGioc1) == null) {
+			var vinc = document.getElementById("tfGioc1").value;
+			if (vinc == null) 
+			{
 				document.getElementById("setText").innerHTML = "Giocatore 1 ha vinto"
 			}
-			else {
-				document.getElementById("setText").innerHTML = document.getElementById(tfGioc1) + " ha vinto"
+			else 
+			{
+				document.getElementById("setText").innerHTML = vinc + " ha vinto"
 			}
 			break
 		}
@@ -98,11 +101,12 @@ function checkWin() {
 			finePartita++
 			console.log(finePartita)
 			/*VITTORIA PER LE O*/
-			if (document.getElementById(tfGioc2) == null) {
+			var vinc = document.getElementById("tfGioc2").value;
+			if (vinc == null) {
 				document.getElementById("setText").innerHTML = "Giocatore 2 ha vinto"
 			}
 			else {
-				document.getElementById("setText").innerHTML = document.getElementById(tfGioc2) + " ha vinto"
+				document.getElementById("setText").innerHTML = vinc + " ha vinto"
 			}
 			break
 

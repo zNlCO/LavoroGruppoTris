@@ -39,8 +39,10 @@ function mostra2()
 }
 
 
-function cleanTris(){
-	for(let i = 0; i<9; i++){
+function cleanTris()
+{
+	for(let i = 0; i<9; i++)
+	{
 		document.images[i].src = "../imm/vuoto.jpg"
 	}
 	
