@@ -16,6 +16,8 @@ function mostra2()
 	turno = 0
 	arrayo = []
 	arrayx = []
+	finePartita = 0
+
 	//resetto il tris data (16/05/2022 ora 18:55)
 	cleanTris()
 
@@ -32,7 +34,7 @@ function mostra2()
 	document.getElementById("setText").innerHTML = ""
 
 	document.getElementById("titolo").innerHTML = "Inserisci i nomi dei dei 2 giocatori"
-
+	
 
 }
 

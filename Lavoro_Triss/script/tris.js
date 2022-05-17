@@ -33,6 +33,7 @@ function assegna(posizione) {
 			document.images[posizione].src = "../imm/o.png"
 			arrayo.push(posizione)
 		}
+
 		}
 	turno += 1 /* incremento del turno */
 	if (turno > 4) {
