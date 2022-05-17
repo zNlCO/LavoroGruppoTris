@@ -1,7 +1,5 @@
-+conteggi punti 
++(meno importante)conteggi punti 
 
 +grafico
-
-+prevelare i nomi dei giocatori e metterli nei conteggi punti e nella scritta di vincita (da sistemare... da sempre null anche se c'è un nome nell'input)
 
 +modalità torneo
