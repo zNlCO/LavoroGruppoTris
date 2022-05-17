@@ -8,6 +8,7 @@ function mostra()
 	document.getElementById('tfGioc2').disabled = true;
 	//fa scomparire il bottone:GIOCA
 	document.getElementById('btnImg').style.display = "none";
+	document.getElementById("titolo").innerHTML = "TRIS"
 }
 
 function mostra2()
@@ -30,7 +31,7 @@ function mostra2()
 	//reset della scritta del vincitore
 	document.getElementById("setText").innerHTML = ""
 
-	
+	document.getElementById("titolo").innerHTML = "Inserisci i nomi dei dei 2 giocatori"
 
 
 }
