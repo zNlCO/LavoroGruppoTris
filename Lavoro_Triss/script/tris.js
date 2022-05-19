@@ -78,6 +78,7 @@ function checkWin() {
 			else {
 				document.getElementById("setText").innerHTML = vinc + " ha vinto"
 			}
+			document.getElementById('lblToccaA').style.display = "none";
 			vitX++
 			break
 		}
@@ -114,6 +115,7 @@ function checkWin() {
 			else {
 				document.getElementById("setText").innerHTML = vinc + " ha vinto"
 			}
+			document.getElementById('lblToccaA').style.display = "none";
 			vitO++
 			break
 		}
@@ -134,7 +136,7 @@ function checkWin() {
 			var vincitore_torneo = document.getElementById("tfGioc1").value;
 		}
 		grafico(vitO,vitX, vincitore_torneo)
-		document.getElementById('grafico').style.display = "grid";
+		document.getElementById("grafico").style.display = "block";
 	}
 }
 

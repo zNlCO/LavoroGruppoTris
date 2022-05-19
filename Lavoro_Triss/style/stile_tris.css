@@ -2,7 +2,7 @@
 {
     display: none;
     /*vw e vh è la percentuale rispettivamente di larghezza e altezza a cui verranno attribuiti in base al viewpoint(l'area che vede l'utente nella pagina)*/ 
-    height: 30vh;
+    height: 40vh;
     width: 100vw;
     /*in questo modo creiamo una griglia 3*3 in automatico*/
     grid-template-columns: repeat(3, auto);
@@ -16,5 +16,5 @@
 img
 {
     height: 10vh;
-    width: 10vw;
+    width: 8vw;
 } 
