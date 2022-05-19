@@ -24,9 +24,8 @@ function assegna(posizione) {
 		}
 	}
 
-	
-	if (casellaMaiUsata && finePartita<1) {
-		turno += 1 /* incremento del turno */
+
+	if (casellaMaiUsata && finePartita < 1) {
 		if (turno % 2 == 0) {
 			document.images[posizione].src = "../imm/x.png"
 			arrayx.push(posizione)
@@ -35,9 +34,9 @@ function assegna(posizione) {
 			document.images[posizione].src = "../imm/o.png"
 			arrayo.push(posizione)
 		}
-
+		turno += 1 /* incremento del turno */
 	}
-	
+
 	if (turno > 4) {
 		checkWin();
 	}
@@ -48,7 +47,7 @@ function checkWin() {
 	//varibile per capire se raggiunge 3 caselle per "formare" la vittoria
 	var caselleEsatte = 0
 	//cicla le 8 combinazioni di vittoria del tris
-	
+
 	for (var c = 0; c < 8; c++) {
 		//cicla le caselle dove c'è una x sopra
 		for (var i = 0; i < arrayx.length; i++) {
@@ -57,27 +56,25 @@ function checkWin() {
 				//controlla se la casella selezionata in questo momento è uguale a una solo casella della combinazione corretta
 				if (arrayx[i] == comGiuste[c][a]) {
 					caselleEsatte++
-					
+
 				}
 			}
 		}
 
-		
+
 		if (caselleEsatte == 3) {
 			finePartita++
 			/*VITTORIA PER LE X*/
 			var vinc = document.getElementById("tfGioc1").value;
-			if (vinc == "") 
-			{
+			if (vinc == "") {
 				document.getElementById("setText").innerHTML = "Giocatore 1 ha vinto"
 			}
-			else 
-			{
+			else {
 				document.getElementById("setText").innerHTML = vinc + " ha vinto"
 			}
 			break
 		}
-		else{
+		else {
 			caselleEsatte = 0
 		}
 	}
@@ -98,7 +95,7 @@ function checkWin() {
 			}
 		}
 
-		
+
 		if (caselleEsatte == 3) {
 			finePartita++
 			console.log(finePartita)
@@ -113,7 +110,7 @@ function checkWin() {
 			break
 
 		}
-		else{
+		else {
 			caselleEsatte = 0
 		}
 	}
