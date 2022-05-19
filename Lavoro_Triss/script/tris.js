@@ -25,6 +25,7 @@ function assegna(posizione) {
 
 	
 	if (casellaMaiUsata && finePartita<1) {
+		turno += 1 /* incremento del turno */
 		if (turno % 2 == 0) {
 			document.images[posizione].src = "../imm/x.png"
 			arrayx.push(posizione)
@@ -34,8 +35,8 @@ function assegna(posizione) {
 			arrayo.push(posizione)
 		}
 
-		}
-	turno += 1 /* incremento del turno */
+	}
+	
 	if (turno > 4) {
 		checkWin();
 	}
