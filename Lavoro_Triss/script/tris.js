@@ -16,7 +16,7 @@ var vitX = 0
 var vitO = 0
 
 //boleana non va quindi uso 0 e 1
-var finePartita = 0;
+var finePartita = 0
 function assegna(posizione) {
 
 	let casellaMaiUsata = true
@@ -32,17 +32,20 @@ function assegna(posizione) {
 		if (turno % 2 == 0) {
 			document.images[posizione].src = "../imm/x.png"
 			arrayx.push(posizione)
+			document.getElementById('lblToccaA').innerHTML = 'Tocca a x'
 		}
 		else {
 			document.images[posizione].src = "../imm/o.png"
 			arrayo.push(posizione)
+			document.getElementById('lblToccaA').innerHTML = 'Tocca a o'
 		}
 		turno += 1 /* incremento del turno */
 	}
 
 	if (turno > 4) {
-		checkWin();
+		checkWin()
 	}
+
 }
 
 
@@ -118,5 +121,43 @@ function checkWin() {
 			caselleEsatte = 0
 		}
 	}
+	
+	//se in totale hanno vinto 5 partite allora mostra il grafico
+	if((vitX+vitO) == 5)
+	{
+		if (vitO>vitX)
+		{
+			var vincitore_torneo = document.getElementById("tfGioc2").value;
+		}
+		else
+		{
+			var vincitore_torneo = document.getElementById("tfGioc1").value;
+		}
+		grafico(vitO,vitX, vincitore_torneo)
+	}
 }
 
+function grafico(vitO, vitX, vincitore_torneo)
+{
+	/*javascript grafico*/ 
+	var xValues = [vitO, vitX];
+	var yValues = [50, 50];
+	var barColors = ["#b91d47","#00aba9"];
+
+	new Chart("grafico", {
+	type: "pie",
+	data: {
+		labels: xValues,
+		datasets: [{
+		backgroundColor: barColors,
+		data: yValues
+		}]
+	},
+	options: {
+		title: {
+		display: true,
+		text: vincitore_torneo + "ha vinto il torneo"
+		}
+	}
+	});
+}

@@ -93,3 +93,16 @@ button:hover::after{
     width: calc(100% + 27px);
     height: calc(100% + 27px);
 }
+#grafico
+{
+    display: none;
+}
+
+
+
+#lblToccaA{
+    text-align: center;
+    font-size: 55px;
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', 'sans-serif';
+}
