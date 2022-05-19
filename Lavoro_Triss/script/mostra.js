@@ -47,3 +47,32 @@ function cleanTris()
 	}
 	
 }
+
+
+function grafico()
+{
+	/*javascript grafico*/ 
+	var xValues = ["Giocatore1", "Giocatore 2"];
+	var yValues = [55, 49];
+	var barColors = [
+	"#b91d47",
+	"#00aba9"
+	];
+
+	new Chart("grafico", {
+	type: "pie",
+	data: {
+		labels: xValues,
+		datasets: [{
+		backgroundColor: barColors,
+		data: yValues
+		}]
+	},
+	options: {
+		title: {
+		display: true,
+		text: "Ha vinto"
+		}
+	}
+	});
+}
