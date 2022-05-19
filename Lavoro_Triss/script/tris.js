@@ -12,6 +12,7 @@ const comGiuste = [
 var arrayx = []
 var arrayo = []
 
+//boleana non va quindi uso 0 e 1
 var finePartita = 0;
 function assegna(posizione) {
 
