@@ -15,6 +15,8 @@ var arrayo = []
 var vitX = 0
 var vitO = 0
 
+var vincitore_torneo
+
 //boleana non va quindi uso 0 e 1
 var finePartita = 0
 function assegna(posizione) {
@@ -129,11 +131,11 @@ function checkWin() {
 	{
 		if (vitO>vitX)
 		{
-			var vincitore_torneo = document.getElementById("tfGioc2").value;
+			vincitore_torneo = document.getElementById("tfGioc2").value;
 		}
 		else
 		{
-			var vincitore_torneo = document.getElementById("tfGioc1").value;
+			vincitore_torneo = document.getElementById("tfGioc1").value;
 		}
 		grafico()
 		document.getElementById("grafico").style.display = "block";
