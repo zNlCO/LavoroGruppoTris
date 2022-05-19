@@ -12,8 +12,8 @@ const comGiuste = [
 var arrayx = []
 var arrayo = []
 
-var vitX
-var vitO
+var vitX = 0
+var vitO = 0
 
 //boleana non va quindi uso 0 e 1
 var finePartita = 0;
