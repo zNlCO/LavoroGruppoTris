@@ -135,12 +135,12 @@ function checkWin() {
 		{
 			var vincitore_torneo = document.getElementById("tfGioc1").value;
 		}
-		grafico(vitO,vitX, vincitore_torneo)
+		grafico()
 		document.getElementById("grafico").style.display = "block";
 	}
 }
 
-function grafico(vitO, vitX, vincitore_torneo)
+function grafico()
 {
 	/*javascript grafico*/ 
 	var xValues = [vitO, vitX];
