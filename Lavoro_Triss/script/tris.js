@@ -146,7 +146,8 @@ function grafico() {
 	var yValues = [vitO * 100 / 5, vitX * 100 / 5];
 	var barColors = ["#b91d47", "#00aba9"];
 
-	new Chart("grafico", {
+	new Chart("grafico", 
+	{
 		type: "pie",
 		data: {
 			labels: xValues,
@@ -157,8 +158,7 @@ function grafico() {
 		},
 		options: {
 			title: {
-				display: true,
-				text: vincitore_torneo + " ha vinto il torneo"
+				display: true
 			}
 		}
 	});
