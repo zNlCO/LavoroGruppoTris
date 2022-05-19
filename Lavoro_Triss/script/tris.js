@@ -67,7 +67,7 @@ function checkWin() {
 			finePartita++
 			/*VITTORIA PER LE X*/
 			var vinc = document.getElementById("tfGioc1").value;
-			if (vinc == null) 
+			if (vinc == "") 
 			{
 				document.getElementById("setText").innerHTML = "Giocatore 1 ha vinto"
 			}
@@ -104,7 +104,7 @@ function checkWin() {
 			console.log(finePartita)
 			/*VITTORIA PER LE O*/
 			var vinc = document.getElementById("tfGioc2").value;
-			if (vinc == null) {
+			if (vinc == "") {
 				document.getElementById("setText").innerHTML = "Giocatore 2 ha vinto"
 			}
 			else {
