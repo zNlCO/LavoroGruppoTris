@@ -97,6 +97,10 @@ button:hover::after{
 {
     display: none;
     margin-left: 25%;
+    margin-right: 25%;
+    width: 150px ;
+    height: 100px;
+    
 }
 
 

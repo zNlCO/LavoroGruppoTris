@@ -139,6 +139,7 @@ function checkWin() {
 		}
 		grafico()
 		document.getElementById("grafico").style.display = "block";
+		document.getElementById('restartButton').style.display = "none";
 	}
 }
 
@@ -165,4 +166,5 @@ function grafico()
 		}
 	}
 	});
+	
 }
