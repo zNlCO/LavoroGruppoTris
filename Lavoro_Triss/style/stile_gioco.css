@@ -96,13 +96,18 @@ button:hover::after{
 #grafico
 {
     display: none;
+    margin-left: 25%;
 }
 
 
 
 #lblToccaA{
-    text-align: center;
+    display: none;
+    font-weight: bold;
     font-size: 55px;
     color: white;
     font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', 'sans-serif';
+}
+#toccaA{
+    text-align:center;
 }
