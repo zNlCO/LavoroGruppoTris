@@ -125,16 +125,13 @@ function checkWin() {
 			caselleEsatte = 0
 		}
 	}
-	
+
 	//se in totale hanno vinto 5 partite allora mostra il grafico
-	if((vitX+vitO) == 5)
-	{
-		if (vitO>vitX)
-		{
+	if ((vitX + vitO) == 5) {
+		if (vitO > vitX) {
 			vincitore_torneo = document.getElementById("tfGioc2").value;
 		}
-		else
-		{
+		else {
 			vincitore_torneo = document.getElementById("tfGioc1").value;
 		}
 		grafico()
@@ -143,28 +140,47 @@ function checkWin() {
 	}
 }
 
-function grafico()
-{
-	/*javascript grafico*/ 
+function grafico() {
+	/*javascript grafico*/
 	var xValues = [vitO, vitX];
-	var yValues = [vitO*100/5, vitX*100/5];
-	var barColors = ["#b91d47","#00aba9"];
+	var yValues = [vitO * 100 / 5, vitX * 100 / 5];
+	var barColors = ["#b91d47", "#00aba9"];
 
 	new Chart("grafico", {
-	type: "pie",
-	data: {
-		labels: xValues,
-		datasets: [{
-		backgroundColor: barColors,
-		data: yValues
-		}]
-	},
-	options: {
-		title: {
-		display: true,
-		text: vincitore_torneo + " ha vinto il torneo"
+		type: "pie",
+		data: {
+			labels: xValues,
+			datasets: [{
+				backgroundColor: barColors,
+				data: yValues
+			}]
+		},
+		options: {
+			title: {
+				display: true,
+				text: vincitore_torneo + " ha vinto il torneo"
+			}
+		}
+	});
+
+	if (vitO > vitX) {
+		var vinc = document.getElementById("tfGioc2").value;
+		if (vinc == "") {
+			document.getElementById("setText").innerHTML = "Giocatore 2 ha vinto il torneo"
+		}
+		else {
+			document.getElementById("setText").innerHTML = vinc + " ha vinto il torneo"
 		}
 	}
-	});
-	
+	else {
+		var vinc = document.getElementById("tfGioc1").value;
+		if (vinc == "") {
+			document.getElementById("setText").innerHTML = "Giocatore 1 ha vinto il torneo"
+		}
+		else {
+			document.getElementById("setText").innerHTML = vinc + " ha vinto il torneo"
+		}
+	}
+
+
 }
