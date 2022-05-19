@@ -12,6 +12,9 @@ const comGiuste = [
 var arrayx = []
 var arrayo = []
 
+var vitX
+var vitO
+
 //boleana non va quindi uso 0 e 1
 var finePartita = 0;
 function assegna(posizione) {
@@ -72,6 +75,7 @@ function checkWin() {
 			else {
 				document.getElementById("setText").innerHTML = vinc + " ha vinto"
 			}
+			vitX++
 			break
 		}
 		else {
@@ -107,8 +111,8 @@ function checkWin() {
 			else {
 				document.getElementById("setText").innerHTML = vinc + " ha vinto"
 			}
+			vitO++
 			break
-
 		}
 		else {
 			caselleEsatte = 0
