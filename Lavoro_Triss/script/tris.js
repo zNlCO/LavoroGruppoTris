@@ -146,7 +146,7 @@ function grafico()
 {
 	/*javascript grafico*/ 
 	var xValues = [vitO, vitX];
-	var yValues = [50, 50];
+	var yValues = [vitO*100/5, vitX*100/5];
 	var barColors = ["#b91d47","#00aba9"];
 
 	new Chart("grafico", {
