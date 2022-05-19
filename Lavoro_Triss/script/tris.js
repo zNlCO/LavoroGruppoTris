@@ -32,12 +32,12 @@ function assegna(posizione) {
 		if (turno % 2 == 0) {
 			document.images[posizione].src = "../imm/x.png"
 			arrayx.push(posizione)
-			document.getElementById('lblToccaA').innerHTML = 'Tocca a x'
+			document.getElementById('lblToccaA').innerHTML = 'Tocca a O'
 		}
 		else {
 			document.images[posizione].src = "../imm/o.png"
 			arrayo.push(posizione)
-			document.getElementById('lblToccaA').innerHTML = 'Tocca a o'
+			document.getElementById('lblToccaA').innerHTML = 'Tocca a X'
 		}
 		turno += 1 /* incremento del turno */
 	}
@@ -134,6 +134,7 @@ function checkWin() {
 			var vincitore_torneo = document.getElementById("tfGioc1").value;
 		}
 		grafico(vitO,vitX, vincitore_torneo)
+		document.getElementById('grafico').style.display = "grid";
 	}
 }
 
