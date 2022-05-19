@@ -162,7 +162,7 @@ function grafico()
 	options: {
 		title: {
 		display: true,
-		text: vincitore_torneo + "ha vinto il torneo"
+		text: vincitore_torneo + " ha vinto il torneo"
 		}
 	}
 	});
